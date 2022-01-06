@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    <%= title %>
+
+    <form action="/register" method="post">
+        <div class="div">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" autocomplete="off" required value="<%= username %>">
+        </div>
+        <div class="div">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="off" required value="<%= email %>">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" autocomplete="off" required>
+        </div>
+
+        <button type="submit" style="margin-top: 10px;">Register</button>
+    </form>
+    <button type="button" style="margin-top: 10px;"><a href="/">Back</a></button>
+</body>
+</html>
